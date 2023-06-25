@@ -36,8 +36,8 @@ class ImportCsvFileService
       'type' => :genre,
       'title' => :title,
       'country' => :country,
-      'date_added' => :year,
-      'release_year' => :published_at,
+      'release_year' => :year,
+      'date_added' => :published_at,
       'description' => :description
     }
   end

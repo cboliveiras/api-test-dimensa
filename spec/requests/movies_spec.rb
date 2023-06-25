@@ -32,4 +32,17 @@ RSpec.describe 'Movies', type: :request do
       end
     end
   end
+
+  describe 'GET /movies' do
+    let!(:movies) { create_list(:movie, 3) }
+
+    it 'returns a JSON response with formatted movie data' do
+      get '/movies'
+
+      expect(response).to have_http_status(:ok)
+
+      response_body = JSON.parse(response.body)
+      expect(response_body.size).to eq(movies.size)
+    end
+  end
 end

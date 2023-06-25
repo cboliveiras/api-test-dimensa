@@ -13,8 +13,10 @@ class MoviesController < ApplicationController
   end
 
   def index
-    movies = Movie.order(:year)
-    render json: movies
+    movies = MoviesFilterService.new(params).filter
+    presenter = MoviePresenter.new(movies)
+
+    render json: presenter.format_response
   end
 
   private
