@@ -88,7 +88,11 @@ Or just comment lines 4-9.
 
 ## API Documentation
 
-The Space Code Platform API documentation is available at [API Documentation File](https://github.com/cboliveiras/api-test-dimensa/blob/main/API_Documentation.md). It provides detailed information about all the available endpoints, including request formats, parameters, and responses.
+The API documentation is available at [API Documentation File](https://github.com/cboliveiras/api-test-dimensa/blob/main/API_Documentation.md). It provides detailed information about all the available endpoints, including request formats, parameters, and responses.
 
 ## Postman Collection
+
+Test the endpoints on [Postman](https://cboliveiras.postman.co/workspace/New-Team-Workspace~1b824ad1-9e36-4ad8-a727-9110ae009b69/collection/18541010-3e899614-cf87-4d3d-bdfe-1adb9fb1b59d?action=share&creator=18541010)
+
+You can also find the Postman documentation [here](https://documenter.getpostman.com/view/18541010/2s93z6ejma)
 
