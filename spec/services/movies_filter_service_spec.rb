@@ -1,4 +1,6 @@
-# fro zen_string_literal: true
+# frozen_string_literal: true
+
+require 'rails_helper'
 
 RSpec.describe MoviesFilterService do
   let(:movies) { create_list(:movie, 3) }
