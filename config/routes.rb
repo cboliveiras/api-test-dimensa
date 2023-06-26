@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
-  resources :movies, only: [:index]
-  post 'movies/import', to: 'movies#import'
+  namespace :v1 do
+    resources :movies, only: [:index]
+    post 'movies/import', to: 'movies#import'
+  end
 end

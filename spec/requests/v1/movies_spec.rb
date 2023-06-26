@@ -10,9 +10,9 @@ RSpec.describe 'Movies', type: :request do
       before { allow_any_instance_of(ImportCsvFileService).to receive(:import?).and_return(true) }
 
       it 'imports the movies from the CSV file' do
-        post '/movies/import', params: { file: csv_data }
+        post '/v1/movies/import', params: { file: csv_data }
 
-        expect(response).to have_http_status(:success)
+        expect(response).to have_http_status(:ok)
         expect(response.body).to include('Import successful')
       end
     end
@@ -24,7 +24,7 @@ RSpec.describe 'Movies', type: :request do
       end
 
       it 'returns an array with errors' do
-        post '/movies/import', params: { file: nil }
+        post '/v1/movies/import', params: { file: nil }
 
         expect(response).to have_http_status(:unprocessable_entity)
         expect(response.body).to include("Title can't be blank")
@@ -37,7 +37,7 @@ RSpec.describe 'Movies', type: :request do
     let!(:movies) { create_list(:movie, 3) }
 
     it 'returns a JSON response with formatted movie data' do
-      get '/movies'
+      get '/v1/movies'
 
       expect(response).to have_http_status(:ok)
 
