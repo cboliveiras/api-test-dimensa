@@ -6,7 +6,7 @@ To set up using Docker, follow these steps:
 
 1. Install Docker on your machine if you haven't already. Refer to the Docker documentation for detailed installation instructions: [https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/)
 
-2. Clone the API Test Dimensa repository from GitHub:
+2. Clone the Movie API repository from GitHub:
 
 ```git clone git@github.com:cboliveiras/movie-api.git```
 
@@ -42,7 +42,7 @@ To set up the project locally, follow these steps:
 
 1. Install Ruby 2.7.4 or later on your machine. You can use a version manager like RVM or rbenv to manage your Ruby installations.
 
-2. Clone the API Test Dimensa repository from GitHub:
+2. Clone the Movie API repository from GitHub:
 
 ```git clone git@github.com:cboliveiras/movie-api.git```
 
