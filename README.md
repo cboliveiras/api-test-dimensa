@@ -8,11 +8,11 @@ To set up using Docker, follow these steps:
 
 2. Clone the API Test Dimensa repository from GitHub:
 
-```git clone git@github.com:cboliveiras/api-test-dimensa.git```
+```git clone git@github.com:cboliveiras/movie-api.git```
 
 3. Navigate to the project directory:
 
-```cd api-test-dimensa```
+```cd movie-api```
 
 4. Build the Docker image:
 
@@ -34,7 +34,7 @@ To set up using Docker, follow these steps:
 
 9. If you want, open a bash session inside the container:
 
-```docker exec -it api-test-dimensa_web_1 bash```
+```docker exec -it movie-api_web_1 bash```
 
 ## Set Up Locally
 
@@ -44,11 +44,11 @@ To set up the project locally, follow these steps:
 
 2. Clone the API Test Dimensa repository from GitHub:
 
-```git clone git@github.com:cboliveiras/api-test-dimensa.git```
+```git clone git@github.com:cboliveiras/movie-api.git```
 
 3. Navigate to the project directory:
 
-```cd api-test-dimensa```
+```cd movie-api```
 
 4. Install the required gems:
 
@@ -63,11 +63,11 @@ default: &default
 
 development:
   <<: *default
-  database: api-test-dimensa_development
+  database: movie-api_development
 
 test:
   <<: *default
-  database: api-test-dimensa_test
+  database: movie-api_test
 ```
 
 Or just comment lines 4-9.
@@ -88,7 +88,7 @@ Or just comment lines 4-9.
 
 ## API Documentation
 
-The API documentation is available at [API Documentation File](https://github.com/cboliveiras/api-test-dimensa/blob/main/API_Documentation.md). It provides detailed information about all the available endpoints, including request formats, parameters, and responses.
+The API documentation is available at [API Documentation File](https://github.com/cboliveiras/movie-api/blob/main/API_Documentation.md). It provides detailed information about all the available endpoints, including request formats, parameters, and responses.
 
 ## Postman Collection
 
